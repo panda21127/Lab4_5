@@ -167,29 +167,29 @@ public class App {
 			}
 			case 5:
 			{
-				//List <ModelAnimal> array=new ArrayList<>();
-				//array=Controller.Generator_list(10);
-				//ModelAnimal.WriteFile(Model.AbsoluteFilePath("10_list"),array);
-				//array=Controller.Generator_list(100);
-				//ModelAnimal.WriteFile(Model.AbsoluteFilePath("100_list"),array);
-				//array=Controller.Generator_list(1000);
-				//ModelAnimal.WriteFile(Model.AbsoluteFilePath("1000_list"),array);
-				//array=Controller.Generator_list(10000);
-				//ModelAnimal.WriteFile(Model.AbsoluteFilePath("10000_list"),array);
-				//array=Controller.Generator_list(100000);
-				//ModelAnimal.WriteFile(Model.AbsoluteFilePath("100000_list"),array);
+				List <ModelAnimal> array=new ArrayList<>();
+				array=Controller.Generator_list(10);
+				ModelAnimal.WriteFile(Model.AbsoluteFilePath("10_list"),array);
+				array=Controller.Generator_list(100);
+				ModelAnimal.WriteFile(Model.AbsoluteFilePath("100_list"),array);
+				array=Controller.Generator_list(1000);
+				ModelAnimal.WriteFile(Model.AbsoluteFilePath("1000_list"),array);
+				array=Controller.Generator_list(10000);
+				ModelAnimal.WriteFile(Model.AbsoluteFilePath("10000_list"),array);
+				array=Controller.Generator_list(100000);
+				ModelAnimal.WriteFile(Model.AbsoluteFilePath("100000_list"),array);
 				
 				HashMap<String, ModelAnimal> arrays = new HashMap<String, ModelAnimal>();
 				arrays=Controller.Generator_map(10);
 				ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("10_map"),arrays);
-				//arrays=Controller.Generator_map(100);
-				//ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("100_map"),arrays);
-				//arrays=Controller.Generator_map(1000);
-				//ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("1000_map"),arrays);
-				//arrays=Controller.Generator_map(10000);
-				//ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("10000_map"),arrays);
-  			    //arrays=Controller.Generator_map(100000);
-				//ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("100000_map"),arrays);
+				arrays=Controller.Generator_map(100);
+				ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("100_map"),arrays);
+				arrays=Controller.Generator_map(1000);
+				ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("1000_map"),arrays);
+				arrays=Controller.Generator_map(10000);
+				ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("10000_map"),arrays);
+  			    arrays=Controller.Generator_map(100000);
+				ModelAnimal.WriteFile_map(Model.AbsoluteFilePath("100000_map"),arrays);
 				
 				MyFrame frame=new MyFrame(1); frame.show();
 				MyFrame frame2=new MyFrame(2); frame2.show();
